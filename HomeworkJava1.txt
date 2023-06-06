@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class HomeWork {
+    public static void main(String[] args) {
+        Scanner k = new Scanner(System.in);
+
+        System.out.println("Please enter any number: ");
+        int a = k.nextInt();
+
+        System.out.println("Это число остается неизменным в десятеричной системе: ");
+        System.out.println(Integer.toString(a));
+
+        System.out.println("Это восьмеричное выражение числа: ");
+        System.out.println(Integer.toOctalString(a));
+
+        System.out.println("Это двоичная система: ");
+        System.out.println(Integer.toBinaryString(a));
+
+        System.out.println("Ну а это уже шеснадцатиричная: ");
+        System.out.println(Integer.toHexString(a));
+
+
+        k.close();
+    }
+}
