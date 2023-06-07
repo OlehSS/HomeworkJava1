@@ -1,0 +1,34 @@
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner l = new Scanner(System.in);
+
+        System.out.print("Введите два числа, разделенные символом '+': ");
+        String input = l.nextLine();
+
+        String[] numbers = input.split("\\+");
+        int a = Integer.parseInt(numbers[0].trim());
+        int b = Integer.parseInt(numbers[1].trim());
+
+        int sum = a + b;
+        System.out.println("Сумма: " + sum);
+
+        // Присваиваем результат переменной result
+        int result = sum;
+
+        // Используем result в дальнейших вычислениях или операциях
+        System.out.println("Шеснадцатеричная система вычисления: ");
+        System.out.println(Integer.toHexString(result));
+
+        System.out.println("Бинарная система: ");
+        System.out.println(Integer.toBinaryString(result));
+
+        System.out.println("Восьмеричная система: ");
+        System.out.println(Integer.toOctalString(result));
+
+        l.close();
+
+    }
+}
+
