@@ -1,0 +1,66 @@
+import java.util.Scanner;
+
+public class Game2 {
+    public static void main(String[] args) {
+
+        // Игра заключалась в том чтобы имея двоичный код написать фразу
+        // Для поиска букв пользовался отдельным классом
+
+        // char t = 'Нужная буква';
+        // System.out.println((int) t);
+
+        // Дальше смотрел на сайте из урока https://asecuritysite.com/coding/asc2
+
+        String w = "0000000001001000";
+        int w1 = Integer.parseInt(w, 2);
+        char l1 = (char) w1;
+
+        String e = "0000000001100101";
+        int e1 = Integer.parseInt(e, 2);
+        char l2 = (char) e1;
+
+        String b = "0000000001101100";
+        int b1 = Integer.parseInt(b, 2);
+        char l3 = (char) b1;
+
+        String o = "0000000001101111";
+        int o1 = Integer.parseInt(o, 2);
+        char l5 = (char) o1;
+
+        String p = "0000000001110111";
+        int p1 = Integer.parseInt(p, 2);
+        char l7 = (char) p1;
+
+        String r = "0000000001110010";
+        int r1 = Integer.parseInt(r, 2);
+        char l8 = (char) r1;
+
+        String d = "0000000001100100";
+        int d1 = Integer.parseInt(d, 2);
+        char l9 = (char) d1;
+
+        String m = "0000000000100001";
+        int m1 = Integer.parseInt(m, 2);
+        char l0 = (char) m1;
+
+        // Писал в расные строчки чтобы легче было искать ошибки
+
+        // Первое слово
+        String total = String.valueOf(l1) + String.valueOf(l2) + String.valueOf(l3) + String.valueOf(l3) + String.valueOf(l5);
+
+        // Второе
+        String total2 = String.valueOf(l7) + String.valueOf(l5) + String.valueOf(l8) + String.valueOf(l3) + String.valueOf(l9);
+
+        // Восклицательный знак
+        String total3 = String.valueOf(l0);
+
+        // Хотел добавить повторение но не хотел писать 3 раза одно и то же
+        // Нашел такой формат кода
+
+        int repeat3times = 3;
+        String repeated = String.valueOf(l0).repeat(repeat3times);
+
+        System.out.println(total + " " + total2 + repeated);
+
+    }
+}
