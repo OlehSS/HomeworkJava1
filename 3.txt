@@ -1,0 +1,20 @@
+public class HomeWork3 {
+    public static void main(String[] args) {
+
+        // Способ 1: использование значений ASCII
+        char first = '0';
+        int q = first;
+        System.out.println(q);
+
+        // Способ 2: использование метода value0f() класса String
+        char second = '0';
+        String w = String.valueOf(second);
+        int ww = Integer.parseInt(w);
+        System.out.println(ww);
+
+        // Способ 3: использование метода getNumericValue() класса символов
+        char third = '0';
+        int e = Character.getNumericValue(third);
+        System.out.println(e);
+    }
+}
