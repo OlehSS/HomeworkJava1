@@ -2,5 +2,7 @@
 
         for x in {1..10}
         do
-        echo -n "$x" && date +'%d.%m.%Y'
+        y="$x"
+        filename="${y}_$(date +'%d.%m.%y')"
+        touch "$filename"
         done
